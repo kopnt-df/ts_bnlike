@@ -3,4 +3,4 @@ export * from './constants'
 export * from './functions'
 
 export { BN } from 'bn.js'
-export { BigNumber as BigNum } from 'bignumber.js'
+export { BigNumber } from 'bignumber.js'
