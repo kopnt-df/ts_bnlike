@@ -2,6 +2,7 @@
 
 // Npm
 import BN from 'bn.js'
+import { BigNumber } from 'bignumber.js'
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -9,7 +10,13 @@ import BN from 'bn.js'
 
 /* --------------------------------------------------------- type: BNLike --------------------------------------------------------- */
 
-export type BNLike = string | number | BN | number[] | Uint8Array | Buffer
+export type BNLike =
+// Common
+string | number
+// BigNumber
+| BigNumber
+// BN
+| BN // | number[] | Uint8Array | Buffer
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
