@@ -22,7 +22,7 @@
     },
     "author": "Kristóf-Attila Kovács",
     "name": "bnlike",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "devDependencies": {
         "@types/bn.js": "^5.1.0"
     }
