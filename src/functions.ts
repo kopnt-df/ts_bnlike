@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------ Imports ----------------------------------------------------------- */
 
 // Npm
-import { BigNumber } from 'bignumber.js'
+import { BigNumber } from './bignumber'
 import BN from 'bn.js'
 
 // Local
@@ -24,6 +24,23 @@ export function bn(value: BNLike): BigNumber {
 
 
     return new BigNumber(value)
+}
+
+export function bnpow(
+    base: BNLike,
+    pow?: BNLike
+): BigNumber {
+    base = bn(base)
+
+    return pow != null ? base.pow(bn(pow)) : base
+}
+
+export function bn2(pow?: BNLike): BigNumber {
+    return bnpow(2, pow)
+}
+
+export function bn10(pow?: BNLike): BigNumber {
+    return bnpow(10, pow)
 }
 
 

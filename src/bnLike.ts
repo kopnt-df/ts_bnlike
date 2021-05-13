@@ -2,7 +2,7 @@
 
 // Npm
 import BN from 'bn.js'
-import { BigNumber } from 'bignumber.js'
+import { BigNumber } from './bignumber'
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 
