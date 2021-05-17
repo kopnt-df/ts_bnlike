@@ -13,6 +13,10 @@ import { BNLike } from './bnLike'
 
 /* ----------------------------------------------------------- Functions ---------------------------------------------------------- */
 
+export function isBn(value: BNLike): boolean {
+    return BigNumber.isBigNumber(value)
+}
+
 export function bn(value: BNLike): BigNumber {
     if (BigNumber.isBigNumber(value)){
         return value
