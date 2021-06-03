@@ -23,7 +23,7 @@ export function bn(value: BNLike): BigNumber {
     }
 
     if (BN.isBN(value)) {
-        return new BigNumber(value.toString())
+        return new BigNumber(value.toString(10))
     }
 
 
